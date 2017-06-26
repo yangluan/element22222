@@ -1,0 +1,340 @@
+@function rem($px) {
+  @return $px / 46.875 + rem;
+}
+html{
+  overflow-y:auto;
+}
+
+.banner {
+  padding: rem(48) rem(24) rem(36) rem(48);
+  background-color: rgba(7, 17, 27, 0.5);
+  blur: 10px;
+  .head-box {
+    position: relative;
+    width: 100%;
+    height: rem(128);
+    border: 1px solid transparent;
+    .left-Pic {
+      float: left;
+      margin-right: rem(32);
+      width: rem(128);
+      height: rem(128);
+      border-radius: 4px;
+      border: 1px solid transparent;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+    .logoAnd-text {
+      float: left;
+      border: 1px solid transparent;
+      width: rem(500);
+      height: rem(35);
+      .logoPic {
+        float: left;
+        margin: 0 rem(12) rem(16) 0;
+        width: rem(62.5);
+        height: rem(35);
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+      .zpxF {
+        float: left;
+        font-size: rem(32);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: rem(36);
+      }
+      .clear {
+        clear: both;
+      }
+      .distribution {
+        margin-bottom: rem(20);
+        font-size: rem(24);
+        color: rgb(255, 255, 255);
+        font-weight: 200;
+        line-height: rem(24);
+      }
+      .threeText {
+        width: 100%;
+        height: rem(25);
+        border: 1px solid transparent;
+        .jian-text {
+          float: left;
+          margin-right: rem(8);
+          width: rem(25);
+          height: rem(25);
+          border-radius: 4px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+          }
+        }
+        .three-te {
+          font-size: rem(20);
+          color: rgb(255, 255, 255);
+          font-weight: 200;
+          line-height: rem(24);
+        }
+      }
+    }
+    .num-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: rem(14) rem(16) rem(14) rem(16);
+      width: rem(86);
+      font-size: rem(20);
+      color: rgb(255, 255, 255);
+      font-weight: 200;
+      line-height: rem(24);
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-radius: rem(20);
+    }
+  }
+}
+
+.section {
+  position: fixed;
+  width: 100%;
+  height: rem(56);
+  background-color: rgba(7, 17, 27, 0.2);
+  .notice {
+    position: relative;
+    margin: rem(15) rem(24) rem(15) rem(24);
+    width: 100%;
+    border: 1px solid transparent;
+    .pic-gongG {
+      margin-right: rem(8);
+      float: left;
+      width: rem(45);
+      height: rem(25);
+      border-radius: 4px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+    .text-guangG {
+      width: 80%;
+      font-size: rem(20);
+      color: rgb(255, 255, 255);
+      font-weight: 200;
+      line-height: rem(26);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      .gongGao-JianTou {
+        position: absolute;
+        right: rem(70);
+        bottom: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  .content-nav {
+    position: fixed;
+    width: 100%;
+    height: rem(80);
+    background-color: #fff;
+    border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+    a {
+      width: 33%;
+      display: block;
+      float: left;
+      text-align: center;
+      line-height: rem(80);
+      font-size: rem(28);
+      color: rgb(7, 85, 93);
+    }
+    .active {
+      color: rgb(240, 20, 20);
+    }
+  }
+  .section-body {
+    width: 100%;
+    margin-top: rem(96);
+    border: 1px solid transparent;
+    .left-tab {
+      position: absolute;
+      z-index: 3;
+      width: rem(160);
+      background-color: #f3f5f7;
+      .li-active {
+        background-color: #fff;
+      }
+      ul li {
+        text-align: center;
+        width: rem(160);
+        height: rem(108);
+        font-size: rem(24);
+        font-weight: 200;
+        line-height: rem(108);
+        .active-li {
+          padding-top: rem(28);
+          width: rem(100);
+          margin: 0 auto;
+          text-align: center;
+          line-height: rem(28);
+          color: #000;
+          font-weight: 600;
+          .te-pic {
+            float: left;
+            width: rem(25);
+            height: rem(25);
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    .right-list {
+      position: relative;
+      z-index: 1;
+      padding-left: rem(160);
+      background-color: #F3F5F7;
+      width: 100%;
+      .title {
+        padding-left: rem(36);
+        height: rem(52);
+        background-color: #F3F5F7;
+        border-left: 1px solid #d9dde1;
+        font-size: rem(24);
+        color: rgb(147, 153, 159);
+        line-height: rem(52);
+      }
+      .pic-list-Bigbox {
+        height: rem(150);
+        padding: rem(36) rem(20) rem(36) rem(36);
+        background-color: #fff;
+        border: 1px solid transparent;
+        .pic-listBox {
+          float: left;
+          width: rem(115);
+          height: rem(115);
+          border: 1px solid transparent;
+          border-radius: 4px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .text-list {
+          float: left;
+          margin-left: rem(20);
+          .firstT {
+            font-size: rem(28);
+            color: rgb(7, 17, 27);
+            line-height: rem(28);
+          }
+          .secondT, .threeT {
+            font-size: rem(20);
+            color: rgb(147, 153, 159);
+            margin-top: rem(5);
+          }
+
+          .goCar{
+            position: relative;
+            border: 1px solid transparent;
+            padding-right: rem(36);
+            .red {
+              margin-right: rem(16);
+              color: red;
+              font-size: rem(28);
+              font-weight: 700;
+              line-height: rem(48);
+            }
+            .addCart{
+              display: inline-block;
+              float: right;
+              width: rem(40);
+              height: rem(40);
+              border-radius: 50%;
+              position: absolute;
+              right: rem(-90);
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+  width: 100%;
+  height: rem(96.5);
+  background-color: #141d27;
+  position: absolute;
+  bottom: 0;
+  opacity: .9;
+  z-index: 3;
+  .round{
+    width: rem(116);
+    height:rem(116);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: rem(6);
+    left: rem(5);
+    z-index: 4;
+    text-align: center;
+    font-size: rem(48);
+    color: rgba(255,255,255,0.4);
+    line-height: rem(100);
+    margin-right: rem(36);
+  }
+  .price{
+    //border-right: 1px solid rgba(255,255,255,0.1);
+    position: absolute;
+    left: rem(188);
+    bottom:rem(30);
+    font-size: rem(32);
+    color: rgba(255,255,255,0.4);
+    font-weight: 700;
+  }
+  .foot-text{
+    position: absolute;
+    bottom:rem(30);
+    left: rem(284);
+    font-size: rem(32);
+    color: rgba(255,255,255,0.4);
+  }
+  .bigBlack{
+    position: absolute;
+    bottom: 0;
+    left: rem(46);
+    width: rem(130);
+    height: rem(130);
+    background-color: #2B343D;
+    border-radius: 50%;
+  }
+  .jieSuan{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: rem(24);
+    text-align: center;
+    line-height: rem(96.5);
+    width: rem(210);
+    height: rem(96.5);
+    font-weight: 700;
+    color: rgba(255,255,255,0.4);
+    background-color: #2B333B;
+  }
+}
